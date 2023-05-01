@@ -2,7 +2,7 @@
 import pandas as pd
 
 #Need file path. Unable to figure out how to do this differently.
-Whole_Spreadsheet = pd.read_excel(r"C:\Users\joshl\Desktop\Work\Portfolio\Python\WaitingListProject\Learning_Activities_Waiting_List.xlsx")
+Whole_Spreadsheet = pd.read_excel(r [FILE LOCATION HERE])
 
 #Whole Spreadsheet if needed.
 #print(Whole_Spreadsheet)
@@ -11,7 +11,7 @@ Course_Title = [0]
 
 
 #Counting Number on WL, using 2 columns.
-df = pd.read_excel(r"C:\Users\joshl\Desktop\Work\Portfolio\Python\WaitingListProject\Learning_Activities_Waiting_List.xlsx",usecols =['Course Title','Forename'])
+df = pd.read_excel(r [FILE LOCATION HERE] ,usecols =['Course Title','Forename'])
 
 #Renamed Forename to 
 dfRenamed = df.rename(columns={'Forename' : 'Number On Waiting List'}, inplace=True)
